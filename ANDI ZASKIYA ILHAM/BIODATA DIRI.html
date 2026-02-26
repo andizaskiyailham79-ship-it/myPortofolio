@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata | Andi Zaskiya Ilham</title>
+    <style>
+        :root {
+            --dark-navy: #5e0101;
+            --sage-green: #8da399;
+            --soft-white: #fcfcfc;
+            --text-gray: #57606f;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background-color: #d1d8e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: var(--soft-white);
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        /* Sidebar Kiri */
+        .sidebar {
+            background: var(--dark-navy);
+            color: white;
+            flex: 1;
+            min-width: 280px;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar h1 {
+            font-size: 1.6rem;
+            margin: 20px 0 5px;
+            letter-spacing: 1px;
+        }
+
+        .sidebar p {
+            color: var(--sage-green);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .profile-frame {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid var(--sage-green);
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Konten Kanan */
+        .main-content {
+            flex: 2;
+            padding: 50px;
+            min-width: 320px;
+            background: white;
+        }
+
+        .label {
+            display: inline-block;
+            background: #f1f2f6;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: var(--dark-navy);
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            line-height: 1.8;
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+
+        .item h4 {
+            margin: 0;
+            font-size: 0.7rem;
+            color: #a4b0be;
+            text-transform: uppercase;
+        }
+
+        .item p {
+            margin: 5px 0 0;
+            font-weight: 600;
+            color: var(--dark-navy);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            border-left: 4px solid var(--sage-green);
+            background: #f9f9f9;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        @media (max-width: 600px) {
+            .card { flex-direction: column; }
+            .main-content { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="sidebar">
+            <div class="profile-frame">
+            <img src="ANDI ZASKIYA ILHAM.png.png" alt="Foto Profil">
+            </div>
+            <h1>Andi Zaskiya Ilham</h1>
+            <p>Mahasiswa Terapi Gigi</p>
+        </div>
+
+        <div class="main-content">
+            <span class="label">Biodata Diri</span>
+            <div class="intro">
+                Perkenalkan, saya <b>Andi Zaskiya Ilham</b>, lahir di <b>Bulukumba, 9 September 2004</b>. 
+                Saat ini saya tengah menempuh pendidikan di <b>Universitas Hasanuddin</b> pada jurusan <b>Terapi Gigi</b>. 
+                Saya berkomitmen untuk menjadi tenaga kesehatan yang profesional dan humanis bagi masyarakat.
+            </div>
+
+            <div class="grid-info">
+                <div class="item">
+                    <h4>Pendidikan</h4>
+                    <p>UNHAS</p>
+                </div>
+                <div class="item">
+                    <h4>Asal</h4>
+                    <p>Bulukumba</p>
+                </div>
+                <div class="item">
+                    <h4>Tanggal Lahir</h4>
+                    <p>09-09-2004</p>
+                </div>
+                <div class="item">
+                    <h4>Status</h4>
+                    <p>Mahasiswa Aktif</p>
+                </div>
+            </div>
+
+            <footer>
+                <strong>Alamat:</strong> Jl. Mapala. Komp. Pemda No 21/28, Makassar, Sulawesi Selatan.
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
